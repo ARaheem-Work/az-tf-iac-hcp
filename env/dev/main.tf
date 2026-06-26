@@ -7,7 +7,7 @@ module "az_storage_account" {
 
 
 removed {
-  from = module.az_resource_group.azurerm_resource_group.res-0
+  from = azurerm_resource_group.res-0
 
   lifecycle {
     destroy = false
