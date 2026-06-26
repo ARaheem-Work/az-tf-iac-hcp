@@ -8,6 +8,6 @@ resource "azurerm_resource_group" "res-0" {
     managed_by  = "terraform"
   }
   lifecycle {
-    destroy = false
+    prevent_destroy = true
   }
 }
