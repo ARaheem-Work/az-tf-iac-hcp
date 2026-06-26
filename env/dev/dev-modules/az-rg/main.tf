@@ -7,7 +7,12 @@
 #     owner       = "platform-team"
 #     managed_by  = "terraform"
 #   }
-#   lifecycle {
-#     prevent_destroy = true
-#   }
 # }
+
+removed {
+  from = azurerm_resource_group.res-0
+
+  lifecycle {
+    destroy = false
+  }
+}
